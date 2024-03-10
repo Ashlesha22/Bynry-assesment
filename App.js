@@ -5,7 +5,7 @@ import AdminPanel from './AdminPanel';
 
 const App = () => {
   const [profiles, setProfiles] = useState([
-    { id: 1, name: 'John Doe', description: 'Software Developer', address: '123 Main St, City' },
+    { id: 1, name: 'John Doe', description: 'Software Developer', address: 'Warje, Pune' },
   ]);
 
   const [selectedProfile, setSelectedProfile] = useState(null);
@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Profile Explorer</h1>
+      <h1>Bynry Assignment</h1>
       <div className="profiles-container">
         {profiles.map((profile) => (
           <Profile key={profile.id} profile={profile} onSummaryClick={() => handleSummaryClick(profile)} />
